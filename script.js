@@ -103,6 +103,14 @@ function next(choice){
         }
     }
     if (step == 5) {
-        
+        document.body.style.backgroundImage = "url('assets/onStage.jpg')"
+        image.style.display = "none"
+        yes.innerHTML = "Begin the song!"
+        manText.innerHTML = "Oh Geez. What have I signed up for...I better lock in..."
+    }
+    if (step == 6) {
+        window.open('game.html', '_blank');
+        window.close('main.html');
+
     }
 }

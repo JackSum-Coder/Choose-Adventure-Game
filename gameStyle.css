@@ -1,0 +1,57 @@
+body {
+    background-image: url("assets/onStage.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 30px;
+    background-color: #000000b3;
+}
+.gigGuy {
+position: absolute;    
+width: 400px;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    
+}
+.chords {
+    padding: 10px;
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+button {
+    padding: 10px;
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    background-color: #000000b3;
+    color:white
+}
+button:hover {
+    scale: 1.02;
+    color: chocolate;
+    transition:cubic-bezier(1, 0, 0, 1);
+}
+.button-classes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+.link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 4px;
+}
