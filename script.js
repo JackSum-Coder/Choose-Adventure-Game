@@ -90,7 +90,7 @@ function next(choice){
             image.src = "assets/gigPerson.png"
             document.body.style.backgroundImage = "url('assets/jazzbarBg.gif')"
             if (keyboard == 1) {
-                manText.innerHTML = "Hey! Perfect timing, we're going on stage in a minute...Hold on is that a Yamaha keyboard?? Dude, we needed a Nord or else it won't sound right...ah whatever let's just go, we don't have time!"
+                manText.innerHTML = "Hey! Perfect timing, we're going on stage in a minute...Hold on is that a Yamaha keyboard?? Dude, we needed a Nord or else it won't sound right...ah whatever, let's just go, we don't have time!"
                 yes.innerHTML = "Go on stage"
             }
             else {
