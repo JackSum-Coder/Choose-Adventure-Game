@@ -17,10 +17,20 @@ button.addEventListener("click", function(){
     nameInput.style.display = "none";
     yes.style.display = ""
     no.style.display = ""
-});
+})
 yes.addEventListener("click", function(){
+    manText.innerHTML = "Perfect, go down this street, take a right, then go 2 blocks, take a left, then go 3 blocks and take a slight right. Got it?"
+    yes.innerHTML = "Uhh..I guess..."
+    let iGuess = yes
+    no.style.display = "none"
 
 })
 no.addEventListener("click", function(){
-    manText.innerHTML = "Man...alright. I guess I'll look for someone else...have a nice one bud."
+    manText.innerHTML = "Man...alright. I guess I'll look for someone else...have a nice one bud. (Refresh to start over)"
+    yes.style.display = "none"
+    no.style.display = "none"
+})
+
+iGuess.addEventListener("click", function(){
+    image.style.display = "none";
 })
