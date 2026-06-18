@@ -109,8 +109,9 @@ function next(choice){
         manText.innerHTML = "Oh Geez. What have I signed up for...I better lock in..."
     }
     if (step == 6) {
-        window.open('game.html', '_blank');
         window.close('main.html');
+        window.open('game.html', '_blank');
+       
 
     }
 }

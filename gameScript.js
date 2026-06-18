@@ -1,15 +1,28 @@
 let submit = document.querySelector(".button5")
+let chordInput = document.querySelector(".chords")
 let instructions = document.querySelector(".manSpeaking")
 let level = 0
 let gigGuy = document.querySelector(".gigGuy")
+let yes = document.querySelector(".yes")
+let skip = document.querySelector(".skipButton")
 gigGuy.style.display = "none"
-
+yes.style.display = "none"
 
 submit.addEventListener("click", function(){
-    let chord = document.querySelector(".chords").value.trim().toLowerCase()
+    let chord = chordInput.value.trim().toLowerCase()
     level++
     levelCheck(chord)
 })
+
+skip.addEventListener("click", function(){
+    level = 6
+    levelCheck()
+})
+yes.addEventListener("click", function(){
+     window.close('game.html');
+    window.open('main.html', '_blank');
+})
+
 
 function levelCheck(chord){
     if (level === 1) {
@@ -42,10 +55,20 @@ function levelCheck(chord){
     }
     if (level === 5) {
         if (chord === "aminor") {
-            gigGuy.style.display = ""
-            instructions.innerHTML = "Dude, awesome job! You saved the gig! Thanks to you we're going on tour, and I think you should join us. What do you say?"
+
+            level ++
+            levelCheck()
+         
         } else {
             instructions.innerHTML = "You failed! Try again! (Refresh)"
         }
+    }
+    if (level > 5) {
+            instructions.innerHTML = "Dude, awesome job! You saved the gig! Thanks to you we're going on tour, and I think you should join us. What do you say?"
+            gigGuy.style.display = ""
+            document.body.style.backgroundImage = "url('assets/jazzbarBg.gif')"
+            chordInput.style.display = "none"
+            submit.style.display = "none"
+            yes.style.display = ""
     }
 }
