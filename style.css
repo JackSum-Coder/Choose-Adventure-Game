@@ -18,7 +18,7 @@ h1 {
     left: 0;
     color: white;
     padding: 30px;
-    background-color: #00000062;
+    background-color: #000000b3;
 }
 .name {
     padding: 10px;
@@ -31,7 +31,7 @@ button {
     margin-left: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
-    background-color: #00000062;
+    background-color: #000000b3;
     color:white
 }
 button:hover {
