@@ -13,7 +13,7 @@ no.style.display = "none"
 
 //first event name enter 
 button.addEventListener("click", function(){
-    
+    document.getElementById("my_audio").play();
     manText.innerHTML = "Nice to meet you " + nameInput.value + ". Alright kid, here's the deal: you need to go visit George's Music Store and buy a keyboard, okay? Remember, you don't got a lotta time so you better hurry up son.";
     button.style.display = "none";
     nameInput.style.display = "none";

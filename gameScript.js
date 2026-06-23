@@ -8,7 +8,9 @@ let skip = document.querySelector(".skipButton")
 gigGuy.style.display = "none"
 yes.style.display = "none"
 
+
 submit.addEventListener("click", function(){
+    document.getElementById("my_audio2").play()
     let chord = chordInput.value.trim().toLowerCase()
     level++
     levelCheck(chord)
