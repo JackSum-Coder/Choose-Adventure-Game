@@ -22,7 +22,7 @@ skip.addEventListener("click", function(){
 })
 yes.addEventListener("click", function(){
      window.close('game.html');
-    window.open('main.html', '_blank');
+    window.open('index.html', '_blank');
 })
 
 
